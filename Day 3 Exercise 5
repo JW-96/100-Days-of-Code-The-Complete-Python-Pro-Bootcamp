@@ -1,0 +1,27 @@
+# 🚨 Don't change the code below 👇
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+
+names = name1.lower() + name2.lower()
+#count the letters T,R,U,E
+true_count_names = names.count('t') 
+true_count_names = names.count('r') + true_count_names
+true_count_names = names.count('e') + true_count_names
+true_count_names = names.count('u') + true_count_names
+#count the letters L,O,V,E
+love_count_names = names.count('l') 
+love_count_names = names.count('o') + love_count_names
+love_count_names = names.count('v') + love_count_names
+love_count_names = names.count('e') + love_count_names
+
+percentage_love = str(true_count_names) + str(love_count_names)
+if int(percentage_love) > 90 or int(percentage_love) < 10:
+    print(f"Your score is {percentage_love}, you go together like coke and mentos.")
+elif int(percentage_love) > 40 and int(percentage_love) < 50:
+    print(f"Your score is {percentage_love}, you are alright together.")
+else:
+    print(f"Your score is {percentage_love}.")
