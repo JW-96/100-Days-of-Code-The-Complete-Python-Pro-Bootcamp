@@ -25,4 +25,4 @@ elif pick == 1 and random_number == 2:
 elif pick == 2 and random_number == 0:
     print("You lose")
 else:
-    ("invalid number; You lose")
+    print("invalid number; You lose")
