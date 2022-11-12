@@ -1,0 +1,26 @@
+print("A simple text adventure game")
+username = input("What is your Username?")
+
+loop = 0
+print(f"Welcome, {username} before you lies three boxes, one of them contains the key to leave this room, the other contains a poisonous snakes")
+while loop < 1:
+  answer1 = input("What do you want to do? ")
+  if "open" in answer1:
+    answer1_1 = input ("which box do you want to open? ")
+    if "left" in answer1_1:
+        print("you found the key")
+        break
+    else:
+        print("you got bitten by a poisonous snake, game over")
+
+  elif "shake" in answer1:
+    print("you shook the boxes and heard a faint rattle in the right box, you're certain that one contains a snake, well done.")
+    answer1_1 =input("which box do you want to open? ")
+    if "left" in answer1_1:
+        print("you found the key")
+        break
+    else:
+        print("you got bitten by a poisonous snake, game over")
+  else:
+    print("your answer isn't recognized by the computer, please try again.")
+#add multiple questions to make the game longer;
